@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FLICKR-gallery</title>		
+		<link rel="stylesheet" href="css/style.css" />
+      	<script src="js/script.js"></script>
+	</head>
+	
+	<body>
+    <div class="p1" id="p1">      
+      <div class="title"><h1>Flickr Photo Gallery</h1></div>      
+      <div id="searchContainer" class="searchContainer">
+         <input type="text" class="textbox" name="searchBox" id="searchBox" placeholder="Search" required onkeypress="onEnterKey(event);" />
+         <input type="submit" class="searchButton" id="clickMe" value="Search" onClick="getPhotos();"/>
+      </div>       
+     </div>			
+     <div id="allImagesContainer" class="allImagesContainer"></div>
+     <input type="submit" id="viewGalleryButton" class="viewGalleryButton" value="View in Gallery" onClick="showGallery();"/>
+     <div id="galleryContainer" class="galleryContainer"></div>	
+     <div id="largeImage" class="modal">
+		  <span class="close">&times;</span>
+		  <img class="modal-content" id="img01">		  
+	  </div>
+	</body>
+	
+</html>
